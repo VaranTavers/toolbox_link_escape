@@ -1,0 +1,13 @@
+[Unit]
+Description=Own solution to opening links inside toolboxes.
+DefaultDependencies=no
+Before=shutdown.target
+
+[Service]
+type=simple
+ExecStart="/put/your/path/here/tle_server"
+WorkingDirectory="/put/your/path/here"
+
+[Install]
+WantedBy=default.target
+
